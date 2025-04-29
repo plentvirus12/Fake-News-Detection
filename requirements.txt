@@ -1,0 +1,9 @@
+tensorflow
+transformers
+fastapi
+pydantic
+uvicorn
+pillow
+jinja2
+python-multipart
+typing-extensions
