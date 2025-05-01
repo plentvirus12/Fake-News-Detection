@@ -4,7 +4,7 @@ from PIL import Image
 import numpy as np
 
 # Load the model
-model = load_model('path_to_your_model/hybrid_cnn_lstm_vit_model.h5')
+model = load_model('models/hybrid_cnn_lstm_vit_model.h5')
 
 # Function to preprocess image
 def preprocess_image(image):
