@@ -1,26 +1,38 @@
-# Fake News Image Detection
+````markdown
+# Project Setup Guide
 
-## How to run:
-1. Create virtual environment:
-   python -m venv venv
+## Prerequisites
+- Python 3.8
 
-2. Activate virtual environment:
-   venv\Scripts\activate   (on Windows)
+## Installation Steps
 
-3. Install requirements:
+1. **Create a virtual environment**:
+   Run the following command to create a virtual environment named `.venv`:
+   ```bash
+   python3.8 -m venv .venv
+````
+
+2. **Install required dependencies**:
+   Install the necessary dependencies listed in `requirements.txt`:
+
+   ```bash
    pip install -r requirements.txt
+   ```
 
-4. Run server:
-   uvicorn app.main:app --reload
+3. **Navigate to the backend directory**:
+   Change to the `backend` directory where the main application resides:
 
-5. Open browser:
-   http://127.0.0.1:8000
+   ```bash
+   cd backend
+   ```
 
-## Folder structure:
-- app/
-  ├─ main.py
-  ├─ templates/index.html
-  └─ static/ (optional)
+4. **Start the application with Uvicorn**:
+   Run the application using Uvicorn in development mode (`--reload` allows for auto-reloading):
 
-- models/
-  └─ hybrid_cnn_lstm_vit_model.h5
+   ```bash
+   uvicorn main:app --reload
+   ```
+
+5. **Access API documentation**:
+   Open your web browser and navigate to [http://localhost:8000/docs](http://localhost:8000/docs) to view the API documentation.
+
